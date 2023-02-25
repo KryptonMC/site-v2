@@ -4,8 +4,10 @@ import Hero from '../components/Hero.vue'
 </script>
 
 <template>
-  <NavBar />
-  <Hero />
+  <div style="display: flex; flex-flow: column; height: 100vh">
+    <NavBar />
+    <Hero />
+  </div>
 </template>
 
 <style scoped></style>

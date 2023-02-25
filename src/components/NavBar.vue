@@ -1,63 +1,102 @@
-<script setup></script>
-
 <template>
-  <header>
-    <img src="../assets/images/banner.png" alt="Krypton MC Logo" class="logo" />
-    <nav>
-      <ul class="items">
-        <li>
-          <a href="https://github.com/KryptonMC/Krypton">
-            <font-awesome-icon icon="fa-brands fa-github" />
-            Github
-          </a>
-        </li>
-        <li>
-          <a href="https://discord.com/invite/4QuwYACDRX">
-            <font-awesome-icon icon="fa-brands fa-discord" />
-            Discord
-          </a>
-        </li>
-        <li>
-          <a href="https://wiki.kryptonmc.org/">
-            <font-awesome-icon icon="fa-solid fa-book" />
-            Wiki
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="navbar">
+    <span>
+      <img
+          src="../assets/images/banner.png"
+          alt="Krypton"
+          width="210"
+          height="60"
+      />
+    </span>
+    <div class="navbar-right">
+      <a href="https://github.com/KryptonMC/Krypton" class="navbar-link">
+        <i class="fab fa-github" />
+        GitHub
+      </a>
+      <a href="https://discord.com/invite/4QuwYACDRX" class="navbar-link">
+        <i class="fab fa-discord" />
+        Discord
+      </a>
+      <a href="https://wiki.kryptonmc.org/" class="navbar-link">
+        <i class="fas fa-book" style="font-size: 24px" />
+        Wiki
+      </a>
+    </div>
+  </div>
 </template>
 
-<style scoped>
-header {
+<style scoped lang="scss">
+$navbar-height: 60px;
+
+.navbar {
+  height: $navbar-height;
+  width: 100%;
+  z-index: 10;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-flow: row;
+  justify-content: flex-end;
   background-color: #2f2f2f;
-  height: 60px;
-  padding: 20px;
-  font-family: 'Merriweather Sans Light', sans-serif;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-}
-img {
-  width: 200px;
-  height: 40px;
+
+  &:after {
+    width: 100%;
+    height: 7px;
+    background-image: linear-gradient(to bottom, #222, rgba(#222, .75), transparent);
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  flex-shrink: 0;
+
+  &:after {
+    position: absolute;
+    width: calc(100% - 4px);
+    top: $navbar-height;
+    left: 0;
+  }
+
+  img {
+    padding: 10px 0 10px 10px;
+  }
+
+  span {
+    display: flex;
+    margin-left: calc(100% / 6.4);
+    margin-right: auto;
+
+    > i {
+      display: block;
+      font-size: 24px;
+      align-self: center;
+    }
+  }
 }
 
-nav ul li {
-  list-style-type: none;
+.navbar-right {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  padding-right: calc(100% / 6.4);
+}
+
+.navbar-link {
+  display: flex;
   align-items: center;
-  display: inline-block;
-  font-size: 24px;
-}
+  padding: 5px 10px;
 
-nav ul li a {
-  color: #bebebe;
-  padding: 10px 30px;
-  text-decoration: none;
-}
+  > i {
+    margin-right: 6px;
+    font-size: 28px;
+  }
 
-nav ul li a:hover {
-  text-decoration: underline;
+  &:hover {
+    transition-duration: .5s;
+    background-color: #252525;
+
+    &:after {
+      transition-duration: .5s;
+      width: 100%;
+    }
+  }
 }
 </style>

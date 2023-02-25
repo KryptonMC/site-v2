@@ -15,9 +15,9 @@
   font-style: normal;
 } */
 
-*,
-*::before,
-*::after {
+*:not(i),
+*:not(i)::before,
+*:not(i)::after {
   box-sizing: border-box;
   margin: 0;
   position: relative;
@@ -31,10 +31,14 @@
 body {
   min-height: 100vh;
   transition: color 0.5s, background-color 0.5s;
-  line-height: 1.6;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a:any-link {
+  color: #f5f5f5;
+  font-family: Merriweather Sans Light, sans-serif;
+  text-decoration: none;
 }
