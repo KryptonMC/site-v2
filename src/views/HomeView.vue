@@ -6,7 +6,9 @@ import Hero from '../components/Hero.vue'
 <template>
   <div class="container">
     <NavBar />
-    <Hero />
+    <div style="overflow: auto">
+      <Hero />
+    </div>
   </div>
 </template>
 
