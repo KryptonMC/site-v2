@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import NavBar from '../components/NavBar.vue'
+import Hero from '../components/Hero.vue'
+</script>
 
 <template>
-  <main>
-    <h1>Hello, world</h1>
-  </main>
+  <NavBar />
+  <Hero />
 </template>
+
+<style scoped></style>
