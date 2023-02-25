@@ -18,14 +18,15 @@
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  color: #bebebe;
+  color: #f5f5f5;
 }
 
 .hero h1 {
   font-size: 8vw;
+  font-weight: 600;
 }
 
 .hero h2 {
-  font-size: 4vw;
+  font-size: 2vw;
 }
 </style>
