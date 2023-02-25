@@ -1,4 +1,6 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* @font-face {
   font-family: 'Merriweather Sans Light';
   src: url('./fonts/MerriweatherSans-Light.ttf') format('truetype');
   font-weight: 300 100;
@@ -11,7 +13,7 @@
   font-weight: 300;
   font-display: swap;
   font-style: normal;
-}
+} */
 
 *,
 *::before,
@@ -30,7 +32,7 @@ body {
   min-height: 100vh;
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: 'Merriweather Sans Regular', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
