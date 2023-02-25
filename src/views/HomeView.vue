@@ -6,7 +6,9 @@ import Hero from '../components/Hero.vue'
 <template>
   <div style="display: flex; flex-flow: column; height: 100vh">
     <NavBar />
-    <Hero />
+    <div style="overflow: auto">
+      <Hero />
+    </div>
   </div>
 </template>
 
