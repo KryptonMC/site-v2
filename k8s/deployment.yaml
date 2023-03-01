@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: kryptonmc-site-v2
 spec:
   replicas: 1
   revisionHistoryLimit: 3
