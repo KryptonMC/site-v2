@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: kryptonmc-site-v2
 spec:
+  selector:
+    app.kubernetes.io/name: kryptonmc-site
   ports:
     - name: http
       protocol: TCP
