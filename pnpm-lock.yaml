@@ -6,7 +6,7 @@ specifiers:
   '@vue/eslint-config-prettier': ^7.1.0
   eslint: ^8.34.0
   eslint-plugin-vue: ^9.9.0
-  prettier: ^2.8.4
+  prettier: ^3.0.0
   sass: ^1.58.3
   vite: ^4.1.4
   vue: ^3.2.47
@@ -19,10 +19,10 @@ dependencies:
 devDependencies:
   '@rushstack/eslint-patch': 1.2.0
   '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
-  '@vue/eslint-config-prettier': 7.1.0_yrlhudqyxg2l7qvwle5bdpmrli
+  '@vue/eslint-config-prettier': 7.1.0_pec7tj4luw7yyf6ptfuyfda5a4
   eslint: 8.34.0
   eslint-plugin-vue: 9.9.0_eslint@8.34.0
-  prettier: 2.8.4
+  prettier: 3.0.0
   sass: 1.58.3
   vite: 4.1.4_sass@1.58.3
 
@@ -360,7 +360,7 @@ packages:
     resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
     dev: false
 
-  /@vue/eslint-config-prettier/7.1.0_yrlhudqyxg2l7qvwle5bdpmrli:
+  /@vue/eslint-config-prettier/7.1.0_pec7tj4luw7yyf6ptfuyfda5a4:
     resolution: {integrity: sha512-Pv/lVr0bAzSIHLd9iz0KnvAr4GKyCEl+h52bc4e5yWuDVtLgFwycF7nrbWTAQAS+FU6q1geVd07lc6EWfJiWKQ==}
     peerDependencies:
       eslint: '>= 7.28.0'
@@ -368,8 +368,8 @@ packages:
     dependencies:
       eslint: 8.34.0
       eslint-config-prettier: 8.6.0_eslint@8.34.0
-      eslint-plugin-prettier: 4.2.1_u5wnrdwibbfomslmnramz52buy
-      prettier: 2.8.4
+      eslint-plugin-prettier: 4.2.1_w3yk5tlnl3dlr4ytygm4yxkc7e
+      prettier: 3.0.0
     dev: true
 
   /@vue/reactivity-transform/3.2.47:
@@ -613,7 +613,7 @@ packages:
       eslint: 8.34.0
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_u5wnrdwibbfomslmnramz52buy:
+  /eslint-plugin-prettier/4.2.1_w3yk5tlnl3dlr4ytygm4yxkc7e:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -626,7 +626,7 @@ packages:
     dependencies:
       eslint: 8.34.0
       eslint-config-prettier: 8.6.0_eslint@8.34.0
-      prettier: 2.8.4
+      prettier: 3.0.0
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -1130,9 +1130,9 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.8.4:
-    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
-    engines: {node: '>=10.13.0'}
+  /prettier/3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
